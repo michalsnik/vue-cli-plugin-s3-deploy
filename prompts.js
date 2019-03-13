@@ -74,6 +74,14 @@ module.exports = [
     validate: input => input !== '' ? true : 'A filename is required.'
   },
   {
+    name: 'staticIndexCacheControl',
+    type: 'input',
+    message: 'Set Cache-Control header for staticIndexPage file',
+    default: 'no-cache',
+    when: answers => answers.staticHosting === true,
+    validate: input => input !== '' ? true : 'A valid Cache-Control header value required.'
+  },
+  {
     name: 'assetPath',
     type: 'input',
     message: 'Where are your built files?',

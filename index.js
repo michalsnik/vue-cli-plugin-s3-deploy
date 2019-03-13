@@ -35,6 +35,7 @@ module.exports = (api, configOptions) => {
     options.staticHosting = process.env.VUE_APP_S3D_STATIC_HOSTING || options.staticHosting
     options.staticIndexPage = process.env.VUE_APP_S3D_STATIC_INDEX_PAGE || options.staticIndexPage
     options.staticErrorPage = process.env.VUE_APP_S3D_STATIC_ERROR_PAGE || options.staticErrorPage
+    options.staticIndexCacheControl = process.env.VUE_APP_S3D_STATIC_INDEX_CACHE_CONTROL || options.staticIndexCacheControl
     options.staticWebsiteConfiguration = process.env.VUE_APP_S3D_STATIC_WEBSITE_CONFIGURATION || options.staticWebsiteConfiguration
 
     options.assetPath = process.env.VUE_APP_S3D_ASSET_PATH || options.assetPath

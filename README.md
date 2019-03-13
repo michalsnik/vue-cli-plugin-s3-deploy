@@ -50,6 +50,7 @@ Options are set in `vue.config.js` and overridden on a per-environment basis by 
     staticHosting: "Enable S3 static site hosting (default: false)",
     staticIndexPage: "Sets the default index file (default: index.html)",
     staticErrorPage: "Sets the default error file (default: error.html)",
+    staticIndexCacheControl: "Sets the Cache-Control header value for staticIndexPage file (default: no-cache)",
     assetPath: "The path to the built assets (default: dist)",
     assetMatch: "Regex matcher for asset to deploy (default: **)"
     deployPath: "Path to deploy the app in the bucket (default: /)",

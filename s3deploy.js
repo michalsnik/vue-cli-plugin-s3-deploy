@@ -159,6 +159,11 @@ async function uploadFile ({ fileKey, fileBody, options, gzip }) {
     uploadParams.CacheControl = options.cacheControl
   }
 
+  // if the file being uploaded is our static index.html file let's overwrite cache-control header
+  if (fileKey === options.staticIndexPage) {
+    uploadParams.CacheControl = options.staticIndexCacheControl
+  }
+
   if (gzip) {
     uploadParams.ContentEncoding = 'gzip'
   }
