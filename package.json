@@ -1,6 +1,6 @@
 {
-  "name": "vue-cli-plugin-s3-deploy",
-  "version": "3.0.0",
+  "name": "@remotehq/vue-cli-plugin-s3-deploy",
+  "version": "3.0.0-1",
   "description": "A vue-cli plugin for deploying your built Vue app to an S3 bucket.",
   "keywords": [
     "vue",
@@ -14,7 +14,7 @@
     "deployment"
   ],
   "main": "index.js",
-  "homepage": "https://github.com/multiplegeorges/vue-cli-plugin-s3-deploy",
+  "homepage": "https://github.com/remotehq/vue-cli-plugin-s3-deploy",
   "author": {
     "name": "Georges Gabereau",
     "email": "s3-deploy@georg.es",
